@@ -1,0 +1,105 @@
+generated: '2026-09-26'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 6
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.augment.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: augment.com
+  role: api
+  relation: own
+- host: developers.augment.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  - Documentation
+  - APIReference
+  - GettingStarted
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: fastly
+  registrable_domain: augment.com
+  role: portal
+  relation: own
+- host: factory.augment.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: augment.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: manager.augment.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: augment.com
+  role: other
+  relation: own
+- host: webservice.augment.com
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: augment.com
+  role: other
+  relation: own
+- host: www.augment.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Pricing
+  - Support
+  - PrivacyPolicy
+  serves:
+  - cdn
+  vendor: cloudfront
+  registrable_domain: augment.com
+  role: website
+  relation: own

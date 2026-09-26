@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/augment-1/main/json-schema/augment-1-get-rest-v1-catalogs-catalogid-products-response-schema.json",
+  "title": "GetRestV1CatalogsCatalogidProductsResponse",
+  "x-generated": "2026-09-26",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/augment-1-openapi-generated.yml#/components/schemas/GetRestV1CatalogsCatalogidProductsResponse",
+  "type": "object",
+  "properties": {
+    "total": {
+      "type": "integer"
+    },
+    "total_pages": {
+      "type": "integer"
+    },
+    "current_page": {
+      "type": "integer"
+    },
+    "products": {
+      "type": "array"
+    }
+  }
+}

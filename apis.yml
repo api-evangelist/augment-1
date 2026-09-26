@@ -1,23 +1,121 @@
 aid: augment-1
+
 name: Augment
-description: 'Augment is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://augment.com/images/home/header.png
+
+description: Augment is a leading Augmented Reality (AR) platform that enables brands and retailers to create immersive 3D product visualizations.
+  By integrating AR experiences into e‑commerce, field sales, and marketing, Augment helps increase online conversion, improve in‑store engagement,
+  and streamline product presentation. The platform offers tools for 3D model management, AR viewer embedding, and collaborative workflows, serving
+  industries such as consumer goods, fashion, and manufacturing.
+
 url: https://raw.githubusercontent.com/api-evangelist/augment-1/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- AugmentedReality
+- ECommerce
+- 3DVisualization
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/augment-1-plans-pricing.yml
+- type: Spectral
+  url: rules/augment-1-rules.yml
+- type: JSONLD
+  url: json-ld/augment-1-context.jsonld
+- type: Vocabulary
+  url: vocabulary/augment-1-vocabulary.yml
+- type: DataModel
+  url: data-model/augment-1-data-model.yml
+- type: Conformance
+  url: conformance/augment-1-conformance.yml
+- type: Hosts
+  url: hosts/augment-1-hosts.yml
+- type: Vendors
+  url: vendors/augment-1-vendors.yml
+- type: DeveloperPortal
+  url: https://developers.augment.com
+- type: GitHubOrganization
+  url: https://github.com/Augment
+- type: DomainSecurity
+  url: security/augment-1-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/augment-1_stock/
+  url: https://www.augment.com/
+- type: Documentation
+  url: https://developers.augment.com/
+- type: APIReference
+  url: https://developers.augment.com/api
+- type: GettingStarted
+  url: https://developers.augment.com/guides
+- type: Pricing
+  url: https://www.augment.com/pricing/
+- type: Support
+  url: https://www.augment.com/contact-us/
+- type: PrivacyPolicy
+  url: https://www.augment.com/privacy-policy
+
+apis:
+- name: Augment API
+  description: API for Augment platform
+  humanURL: https://developers.augment.com/api
+  baseURL: null
+  aid: augment-1:augment-api
+- aid: augment-1:augment-1-api
+  name: Augment API
+  description: 'Augment API as documented publicly: 12 operations. Contract generated from the documentation by API Evangelist (2026-09-26); not
+
+    the provider''s own document.'
+  humanURL: https://developers.augment.com/api
+  baseURL: https://webservice.augment.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/augment-1-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/augment-1-delete-rest-v1-oauth-token-response-schema.json
+  - type: JSONSchema
+    url: json-schema/augment-1-get-rest-v1-catalogs-response-schema.json
+  - type: JSONSchema
+    url: json-schema/augment-1-post-rest-v1-oauth-token-response-schema.json
+  - type: JSONSchema
+    url: json-schema/augment-1-put-rest-v1-catalogs-request-schema.json
+  - type: JSONSchema
+    url: json-schema/augment-1-get-rest-v1-catalogs-catalogid-products-response-schema.json
+  - type: JSONSchema
+    url: json-schema/augment-1-post-rest-v1-catalogs-catalogid-products-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developers site renders docs via JavaScript, no machine‑readable spec found.
+  evidence:
+  - url: https://developers.augment.com/api
+    status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 19
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
