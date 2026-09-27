@@ -81,17 +81,16 @@ apis:
   humanURL: https://developers.augment.com/api
   baseURL: null
   aid: augment-1:augment-api
-- aid: augment-1:augment-1-api
-  name: Augment API
-  description: 'Augment API as documented publicly: 12 operations. Contract generated from the documentation by API Evangelist (2026-09-26); not
-
-    the provider''s own document.'
+- aid: augment-1:augment-1-rest-api
+  name: Augment Rest API
+  description: The Rest API from Augment — 5 operation(s) for rest.
   humanURL: https://developers.augment.com/api
   baseURL: https://webservice.augment.com
+  tags:
+  - Rest
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/augment-1-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/augment-1-rest-api-openapi.yml
   - type: JSONSchema
     url: json-schema/augment-1-delete-rest-v1-oauth-token-response-schema.json
   - type: JSONSchema
@@ -104,7 +103,6 @@ apis:
     url: json-schema/augment-1-get-rest-v1-catalogs-catalogid-products-response-schema.json
   - type: JSONSchema
     url: json-schema/augment-1-post-rest-v1-catalogs-catalogid-products-request-schema.json
-
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

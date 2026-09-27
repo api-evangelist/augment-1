@@ -1,0 +1,18 @@
+{
+  "provider": "augment-1",
+  "sources": [
+    "_ae-authored/augment-1-openapi-generated.yml"
+  ],
+  "outputs": [
+    "augment-1-rest-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "augment-1-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+1 apis, 2 total)"
+  ],
+  "skipped": []
+}
