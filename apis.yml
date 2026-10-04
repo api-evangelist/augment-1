@@ -26,6 +26,12 @@ modified: '2026-09-26'
 
 tags:
 - Company
+- Augmented Reality
+- E-Commerce
+- 3D Visualization
+- Software-as-a-Service
+tags_raw:
+- Company
 - AugmentedReality
 - ECommerce
 - 3DVisualization
@@ -87,6 +93,8 @@ apis:
   humanURL: https://developers.augment.com/api
   baseURL: https://webservice.augment.com
   tags:
+  - REST
+  tags_raw:
   - Rest
   properties:
   - type: OpenAPI
