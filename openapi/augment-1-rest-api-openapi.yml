@@ -300,54 +300,6 @@ paths:
         snippet: "curl \"https://webservice.augment.com/rest/v1/oauth/token\"  - d '{ \"grant_type\" : \"password\" , \"client_id\" : \"my_integration_id\" , \"client_secret\" : \"my_integration_secret\" , \"username\" : \"my_username\" , \"password\" : \"my_password\"  }'  -X POST  - H \"Content-Type: application/json\"  - H \"Host: example.org\" \n ``` \n Headers Content-Type : application/json Host : example.org Body {\n \" grant_type \": \"pa"
 components:
   schemas:
-    GetRestV1CatalogsCatalogidProductsIdResponse:
-      type: object
-      properties:
-        product:
-          type: object
-    PostRestV1CatalogsCatalogidProductsRequest:
-      type: object
-      properties:
-        product:
-          type: object
-          description: Product object
-      required:
-      - product
-    DeleteRestV1OauthTokenResponse:
-      type: object
-      properties:
-        ' catalogs ':
-          type: array
-          items:
-            type: object
-            properties:
-              ' name ':
-                type: string
-              ' uuid ':
-                type: string
-              ' created_at ':
-                type: string
-                format: date-time
-              ' updated_at ':
-                type: string
-                format: date-time
-    PutRestV1CatalogsCatalogidProductsIdResponse:
-      type: object
-      properties:
-        product:
-          type: object
-    PostRestV1CatalogsCatalogidProductsResponse:
-      type: object
-      properties:
-        product:
-          type: object
-        error:
-          type: object
-    PostRestV1CatalogsResponse:
-      type: object
-      properties:
-        catalog:
-          type: object
     GetRestV1CatalogsCatalogidProductsResponse:
       type: object
       properties:
@@ -359,32 +311,6 @@ components:
           type: integer
         products:
           type: array
-    PutRestV1CatalogsRequest:
-      type: object
-      properties:
-        uuid:
-          type: string
-          description: Catalog UUID
-        name:
-          type: string
-          description: New name
-      required:
-      - uuid
-      - name
-    PutRestV1CatalogsCatalogidProductsIdRequest:
-      type: object
-      properties:
-        product:
-          type: object
-          description: Product object
-      required:
-      - product
-    GetRestV1CatalogsIdResponse:
-      type: object
-      properties:
-        catalog:
-          type: object
-          description: Catalog object
     PostRestV1CatalogsRequest:
       type: object
       properties:
@@ -393,24 +319,6 @@ components:
           description: Catalog name
       required:
       - name
-    PutRestV1CatalogsResponse:
-      type: object
-      properties:
-        catalog:
-          type: object
-    PostRestV1OauthTokenResponse:
-      type: object
-      properties:
-        ' access_token ':
-          type: string
-        ' token_type ':
-          type: string
-        ' expires_in ':
-          type: integer
-        ' scope ':
-          type: string
-        ' created_at ':
-          type: integer
     GetRestV1CatalogsResponse:
       type: object
       properties:
@@ -429,3 +337,95 @@ components:
               ' updated_at ':
                 type: string
                 format: date-time
+    GetRestV1CatalogsIdResponse:
+      type: object
+      properties:
+        catalog:
+          type: object
+          description: Catalog object
+    PostRestV1CatalogsResponse:
+      type: object
+      properties:
+        catalog:
+          type: object
+    PutRestV1CatalogsRequest:
+      type: object
+      properties:
+        uuid:
+          type: string
+          description: Catalog UUID
+        name:
+          type: string
+          description: New name
+      required:
+      - uuid
+      - name
+    GetRestV1CatalogsCatalogidProductsIdResponse:
+      type: object
+      properties:
+        product:
+          type: object
+    PutRestV1CatalogsResponse:
+      type: object
+      properties:
+        catalog:
+          type: object
+    PostRestV1CatalogsCatalogidProductsResponse:
+      type: object
+      properties:
+        product:
+          type: object
+        error:
+          type: object
+    PostRestV1CatalogsCatalogidProductsRequest:
+      type: object
+      properties:
+        product:
+          type: object
+          description: Product object
+      required:
+      - product
+    PutRestV1CatalogsCatalogidProductsIdResponse:
+      type: object
+      properties:
+        product:
+          type: object
+    DeleteRestV1OauthTokenResponse:
+      type: object
+      properties:
+        ' catalogs ':
+          type: array
+          items:
+            type: object
+            properties:
+              ' name ':
+                type: string
+              ' uuid ':
+                type: string
+              ' created_at ':
+                type: string
+                format: date-time
+              ' updated_at ':
+                type: string
+                format: date-time
+    PostRestV1OauthTokenResponse:
+      type: object
+      properties:
+        ' access_token ':
+          type: string
+        ' token_type ':
+          type: string
+        ' expires_in ':
+          type: integer
+        ' scope ':
+          type: string
+        ' created_at ':
+          type: integer
+    PutRestV1CatalogsCatalogidProductsIdRequest:
+      type: object
+      properties:
+        product:
+          type: object
+          description: Product object
+      required:
+      - product
