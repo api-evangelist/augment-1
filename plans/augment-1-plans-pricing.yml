@@ -36,3 +36,29 @@ plans:
       - "Analytics: yes"
       - "Sharing URL: yes"
     limits: []
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: 2-Week Trial
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Small Business
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise & Education
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
