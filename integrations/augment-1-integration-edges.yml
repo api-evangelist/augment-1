@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/augment-1/integrations
+- https://zapier.com/apps/augment/integrations
+- https://n8n.io/integrations/augment-1/
+- https://composio.dev/toolkits/augment-1
+- https://monid.ai/tools/augment-1
+checked:
+- https://composio.dev/toolkits/augment-1
+- https://monid.ai/tools/augment-1
+- https://n8n.io/integrations/augment-1/
+- https://zapier.com/apps/augment-1/integrations
+- https://zapier.com/apps/augment/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
